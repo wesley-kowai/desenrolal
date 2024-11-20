@@ -1,0 +1,108 @@
+body {
+    background-color: #000000;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #000000; /* cor de fundo opcional */
+}
+
+/* Estilo da imagem no lugar do título */
+.header-image {
+    width: 100%;
+    max-width: 600px; /* Limita o tamanho máximo da imagem */
+    height: auto;
+    object-fit: contain; /* Garante que a imagem se adapte mantendo a proporção */
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 0; /* Ajusta o padding no celular */
+    }
+
+    .header-image {
+        max-width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    }
+}
+
+/* Reset básico */
+body, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+/* Estilo da caixa de apresentação dos produtos */
+.product-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.product-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;}
+
+.product-link {
+    display: block;
+    width: 100%; /* Faz o botão ocupar toda a largura da tela */
+    max-width: 500px; /* Limita a largura máxima do botão */
+    padding: 15px;
+    text-align: center;
+    background-color: #ff9900; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 18px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.product-link:hover {
+    background-color: #2980b9;
+}
